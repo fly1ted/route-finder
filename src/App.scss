@@ -1,0 +1,91 @@
+.container{
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+}
+/* @media (max-width: 79.99em){
+  .container {
+      padding: 0 4vw;
+  }
+} */
+
+.S{
+  display: block;
+  /* font-size: 1.5rem; */
+  select{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+.DR{
+  color: #ddd;
+
+  &-r{
+    display: flex;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #eee;
+    }
+
+    &:first-child{
+      color: green;
+    }
+
+    &:last-child{
+      color: orange;
+    }
+
+    span{
+      margin-right: auto;
+    }
+  }
+}
+
+.CR{
+  &-r{
+    display: flex;
+    text-align: center;
+  }
+}
+
+.App {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+
+  >header{
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  >main{
+    grid-column: 1 / span 2;
+  }
+
+  >aside{
+    grid-column: span 2;
+  }
+
+  @media (max-width: 700px) {
+    >main,
+    >aside {
+      grid-column: 1 / span 4;
+    }
+  }
+}
+
+// utils
+.mt-1{margin-bottom: 1rem;}
+.mt-2{margin-bottom: 2rem;}
+.mb-1{margin-bottom: 1rem;}
+.mb-2{margin-bottom: 2rem;}
+
+.ta-c{text-align: center;}
