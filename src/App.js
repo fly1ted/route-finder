@@ -3,8 +3,8 @@ import axios from 'axios'
 import {useState, useEffect, useMemo, useRef} from 'react'
 import './App.scss'
 
-const API_URL = 'http://route-finder-api.local'
-// const API_URL = 'https://quiet-bayou-48580.herokuapp.com'
+// const API_URL = 'http://route-finder-api.local'
+const API_URL = 'https://quiet-bayou-48580.herokuapp.com'
 
 function App() {
   const [routes, setRoutes] = useState([])
